@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+
+    --background-color: #18191a;
+    --card-color: #242526;
+    --hover-color: #3a3b3c;
+    --primary-text: #e4e6eb;
+    --secondary-text: #b0b3b8;
+}
+
+/*
+    NAV BAR STYLES 
+    15 - 156
+*/
+.navBar{
+    position: fixed;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--hover-color);
+    background-color: var(--card-color);
+}
+
+/* left side of navBar */
+.navBar__left{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    margin-left: 16px;
+}
+.navBar__logo{
+    display: flex;
+    align-items: center;
+}
+.navBar__logo > img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.navBar__searchBtn{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    border-radius: 9999px;
+    color: var(--secondary-text);
+    background-color: var(--hover-color);
+}
+.navBar__searchBar{
+    display: none;
+    background-color: var(--hover-color);
+    padding-left: 30px;
+    margin-left: -35px;
+    border-radius: 999px;
+}
+.navBar__searchBar > input{
+    height: 38px;
+    border: none;
+    padding-left: 5px;
+    font-size: 16px;
+    color: var(--secondary-text);
+    background-color: transparent;
+}
+.navBar__searchBar > input:focus{
+    outline: none;
+}
+@media screen and (min-width: 1250px){
+    .navBar__searchBar{
+        display: inline;
+    }
+}
+
+/* middle side of navBar */
+.navBar__middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 85%;
+    width: 50%;
+    max-width: 900px;
+}
+.navBar__navBtns{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 25px;
+    color: var(--secondary-text);
+}
+.navBar__navBtns:hover{
+    background-color: var(--hover-color);
+}
+.navBar__navBtns--active{
+    color: #1778f2;
+    border-bottom: solid;
+    border-radius: 0;
+    border-width: 3px;
+    border-color: #1778f2;
+}
+.navBar__navBtns--active:hover{
+    background-color: var(--card-color);
+}
+#navBar__menuBtn{
+    display: none;
+}
+
+@media screen and (max-width: 750px){
+    .navBar{
+        justify-content: stretch;
+    }
+    .navBar__middle{
+        display: none;
+    }
+    #navBar__menuBtn{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 85%;
+        max-width: 1200px;
+    }
+    .navBar__right{
+        width: 60% !important;
+    }
+}
+
+/* right side navBar */
+.navBar__right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+    width: 25%;
+}
+.navBar__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 999px;
+    color: var(--secondary-text);
+    background-color: var(--hover-color);
+}
+.navBar__icons:hover{
+    background-color:  #515253;
+}
+
+
+/*
+    HOME PAGE STYLES
+    164 - 
+*/
+
+.home{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 60px;
+    color: var(--secondary-text);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+/* sidebar */
+.home__sideBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+    padding: 5px 10px;
+}
+.home__sideIcons{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-top: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.home__sideIcons > img{
+    height: 32px;
+}
+.home__sideIcons > span{
+    margin-left: 10px;
+}
+.home__sideIcons:hover{
+    background-color: var(--hover-color);
+}
+.home__sideBorder{
+    width: 90%;
+    height: 1px;
+    margin-top: 20px;
+    background-color: var(--hover-color);
+}
+.home__sideinfo{
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.home__sideinfo > a{
+    color: white;
+}
+
+/* feed */
+.home__middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    max-width: 900px;
+}
+
+/* post writing block */
+.home__writePost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: var(--card-color);
+}
+.home__writePost > form{
+    height: 100%;
+    width: 100%;
+}
+.home__postInput{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    padding: 6px;
+    border-bottom: 1px solid;
+    border-color: var(--hover-color);
+}
+.home__postImg{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 999px;
+}
+.home__postImg > img{
+    margin-left: -30px;
+    height: 60px;
+}
+.home__postInput > input{
+    height: 40px;
+    border: none;
+    width: 70%;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-left: 5px;
+    border-radius: 70px;
+    background-color: var(--hover-color);
+    color: white;
+}
+.home__postInput > input:focus{
+    font-size: 16px;
+    color: white;
+    outline: none;
+}
+.home__postInput > button{
+    outline: none;
+    margin-left: 10px;
+    color: #1778f2;
+    border-color: #1778f2;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+/* dynamic posts template */
+.home__feed{
+    width: 100%;
+}
+.home__post{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: var(--card-color);
+}
+.post__top{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.post__text{
+    padding: 10px;
+}
+.post__Btns{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    border-top: solid 1px rgba(211, 211, 211, 0.062);
+}
+.post__Btns > button{
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    width: 32%;
+    border-radius: 5px;
+}
+.post__Btns > button:hover{
+    background-color: var(--hover-color);
+}
+
+
+
+/*
+    Right side bar
+    
+*/
+
+.home__others{
+    width:25%;
+}

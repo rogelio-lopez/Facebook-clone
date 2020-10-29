@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon-->
+    <link rel="icon" type="image/png" href="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512"/>
+
+    <!--font awesome kit code-->
+    <script src="https://kit.fontawesome.com/8c85ce78d7.js" crossorigin="anonymous"></script>
+
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>FaceBook</title>
+</head>
+<body>
+
+    <div class="navBar">
+
+        <div class="navBar__left">
+            <div class="navBar__logo">
+                <img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png?w=512&h=512" alt="" />
+            </div>
+            
+            <div class="navBar__searchBtn">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="navBar__searchBar">
+                <input type='text' placeholder="Search Facebook" />
+            </div>
+        </div>
+
+        <div class="navBar__middle">
+            <div class="navBar__navBtns navBar__navBtns--active">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="navBar__navBtns">
+                <i class="fas fa-tv"></i>
+            </div>
+            <div class="navBar__navBtns">
+                <i class="fas fa-store"></i>
+            </div>
+            <div class="navBar__navBtns">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="navBar__navBtns">
+                <i class="fas fa-gamepad"></i>
+            </div>
+        </div>
+
+        <div class="navBar__navBtns" id='navBar__menuBtn'>
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="navBar__right">
+            <div class="navBar__user">
+
+            </div>
+            <div class="navBar__icons">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="navBar__icons">
+                <i class="fas fa-comment"></i>
+            </div>
+            <div class="navBar__icons">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="navBar__icons">
+                <i class="fas fa-caret-down"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--home / bottom part of screen-->
+
+    <div class="home">
+
+        <div class="home__sideBar">
+            <div class="home__sideIcons">
+                <img src="https://img.icons8.com/color/48/000000/user-group-man-woman.png"/>
+                <span>Friends</span>
+            </div>
+            <div class="home__sideIcons">
+                <img src="https://img.icons8.com/color/48/000000/groups.png"/>
+                <span>Groups</span>
+            </div>
+            <div class="home__sideIcons">
+                <img src="https://img.icons8.com/color/48/000000/small-business.png"/>
+                <span>Marketplace</span>
+            </div>
+            <div class="home__sideIcons">
+                <img src="https://img.icons8.com/color/48/000000/tv-show.png"/>
+                <span>Watch</span>
+            </div>
+            <div class="home__sideIcons">
+                <img src="https://img.icons8.com/color/48/000000/calendar.png"/>
+                <span>Events</span>
+            </div>
+            <div class="home__sideIcons">
+                <img src="https://img.icons8.com/color/48/000000/clock--v1.png"/>
+                <span>Memories</span>
+            </div>
+            <div class="home__sideIcons">
+                <img src="https://img.icons8.com/color/48/000000/bookmark-ribbon.png"/>
+                <span>Saved</span>
+            </div>
+            <div class="home__sideIcons">
+                <img src="https://img.icons8.com/color/48/000000/filled-flag.png"/>
+                <span>Pages</span>
+            </div>
+            <div class="home__sideBorder"></div>
+
+            <div class="home__sideinfo">
+                <a href="https://icons8.com/icon/">Icons by Icons8</a>
+            </div>
+        </div>
+    
+        <div class="home__middle">
+            <div class="home__writePost">
+
+                <form id='form' onsubmit="return false;">
+                <div class="home__postInput">
+                    <div class="home__postImg">
+                        <img src="https://image.cnbcfm.com/api/v1/image/105773439-1551717349171rtx6p9uc.jpg?v=1551717410" alt="" />
+                    </div>
+                    
+                    <input id='postIn' type="text" placeholder="What's on your mind?"/> 
+
+                    <button type="submit">Post</button>
+                </div>
+                </form>  
+            </div>
+
+            <div class="home__feed">
+
+                <div class="home__post">
+                    <div class="post__top">
+                        <div class="home__postImg">
+                            <img src='https://image.cnbcfm.com/api/v1/image/105773439-1551717349171rtx6p9uc.jpg?v=1551717410' alt='profile image'/>
+                        </div>
+                        Elon Musk
+                    </div>
+                    <div class="post__text">
+                        Testla boats coming out soon!
+                    </div>
+                    <div class="post__Btns">
+                        <button>Like</button>
+                        <button>Comment</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+
+
+
+        <div class="home__others">
+        </div>
+
+    </div>
+
+    <!--JS Script-->
+    <script src="script.js"></script>
+
+</body>
+</html>
